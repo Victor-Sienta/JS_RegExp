@@ -1,6 +1,6 @@
 function Check(str)
         {
-        let re = /^\D((\w)|(\$))*$/;
+        let re = /^[A-Za-z]((\w)|(\$))*$/;
         let flag=re.test(str);
         return flag;
         }
