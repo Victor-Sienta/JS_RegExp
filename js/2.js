@@ -1,4 +1,4 @@
-function isPredl(str)
+function Check(str)
         {
         let re = /^\D*((\w)|(\$))$/;
         let flag=re.test(str);
@@ -6,7 +6,7 @@ function isPredl(str)
         }
 
         let str=prompt("Введите имя переменной");
-        if (isPredl(str))
+        if (Check(str))
             alert("Имя переменной введено правильно");
         else
             alert("Имя переменной введено неправильно");
